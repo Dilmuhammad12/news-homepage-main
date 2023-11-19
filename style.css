@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+body header {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+body header .nav-fixer {
+  width: 100%;
+  height: 70px;
+}
+body header nav {
+  width: 100%;
+  height: 70px;
+  border-bottom: solid gray;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 0 12% 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+body header nav .simple-ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: end;
+}
+body header nav .simple-ul li {
+  margin: 0 20px;
+  font-size: 18px;
+}
+body header nav .simple-ul li:hover .hover-for-a {
+  color: hsl(5, 85%, 63%);
+}
+body header nav .simple-ul li a {
+  transition: 0.5s;
+  text-decoration: none;
+  color: gray;
+}
+body header nav .after-gamburger-click {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: end;
+}
+body header nav .after-gamburger-click .responsive-ul {
+  width: 70%;
+  list-style: none;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -250px;
+  z-index: 100;
+  transform: translateX(260px);
+  opacity: 0;
+  animation: ul 0.5s ease-out forwards;
+}
+@keyframes ul {
+  0% {
+    opacity: 0;
+    transform: translateX(260px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+body header nav .after-gamburger-click .responsive-ul li {
+  margin: 15px 20px;
+  font-size: 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body header nav .after-gamburger-click .responsive-ul li:hover .hover-for-a {
+  color: hsl(5, 85%, 63%);
+}
+body header nav .after-gamburger-click .responsive-ul li a {
+  transition: 0.5s;
+  text-decoration: none;
+  color: gray;
+}
+body header nav .after-gamburger-click .responsive-ul-remove {
+  animation: ul-remove 0.5s ease-in forwards;
+}
+@keyframes ul-remove {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(260px);
+  }
+}
+body header nav .after-gamburger-click .remove-btn {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  z-index: 150;
+  align-items: center;
+  transform: translate(210px, -110px);
+}
+body header nav .after-gamburger-click .remove-btn::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: black;
+  transform: rotate(-45deg);
+  position: absolute;
+}
+body header nav .after-gamburger-click .remove-btn::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: black;
+  transform: rotate(45deg);
+}
+body header nav .after-gamburger-click .responsive-ul-fixer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0;
+  animation: fixer 0.5s linear forwards;
+}
+@keyframes fixer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+body header nav .after-gamburger-click .responsive-ul-fixer-remove {
+  animation: fixer-remove 0.5s ease-in forwards;
+}
+@keyframes fixer-remove {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body header nav .gamburger-menu {
+  display: none;
+  width: 50px;
+  border-top: solid #000 4px;
+  border-bottom: solid #000 4px;
+  height: 24px;
+  align-items: center;
+}
+body header nav .gamburger-menu::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #000;
+}
+body header .header-bottom {
+  display: flex;
+  margin: 0;
+  margin-top: 40px;
+}
+body header .header-bottom .content {
+  margin-right: 25px;
+  width: 68%;
+  display: flex;
+  flex-direction: column;
+}
+body header .header-bottom .content .img-content {
+  width: 100%;
+}
+body header .header-bottom .content .img-content img {
+  width: 100%;
+}
+body header .header-bottom .content .img-content .img-mobile {
+  display: none;
+}
+body header .header-bottom .content .imgs-bottom {
+  display: flex;
+  margin-top: 20px;
+}
+body header .header-bottom .content .imgs-bottom .imgs-bottom-left {
+  width: 45%;
+}
+body header .header-bottom .content .imgs-bottom .imgs-bottom-left h1 {
+  font-size: 60px;
+  font-family: arial;
+  line-height: 60px;
+  font-weight: 900;
+  color: hsl(240, 100%, 5%);
+}
+body header .header-bottom .content .imgs-bottom .imgs-bottom-right {
+  width: 55%;
+  padding: 0 30px 0 70px;
+}
+body header .header-bottom .content .imgs-bottom .imgs-bottom-right p {
+  font-size: 20px;
+  color: hsl(236, 13%, 42%);
+  font-family: arial;
+  margin-bottom: 20px;
+}
+body header .header-bottom .content .imgs-bottom .imgs-bottom-right button {
+  background: hsl(5, 85%, 63%);
+  padding: 10px 30px;
+  border: none;
+  transition: 0.5s;
+  font-size: 25px;
+}
+body header .header-bottom .content .imgs-bottom .imgs-bottom-right button:hover {
+  background: hsl(240, 100%, 5%);
+}
+body header .header-bottom .content .imgs-bottom .imgs-bottom-right button a {
+  color: #fff;
+  text-decoration: none;
+}
+body header .header-bottom .header-right {
+  width: 30%;
+  background: hsl(240, 100%, 5%);
+}
+body header .header-bottom .header-right .header-right-text-all {
+  padding: 30px;
+}
+body header .header-bottom .header-right .header-right-text-all h1 {
+  color: hsl(35, 77%, 62%);
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+body header .header-bottom .header-right .header-right-text-all h2 {
+  color: #fff;
+  font-size: 25px;
+  margin: 10px 0;
+}
+body header .header-bottom .header-right .header-right-text-all p {
+  font-size: 14px;
+  color: hsl(233, 8%, 79%);
+}
+body header .header-bottom .header-right .header-right-text-all .texts-between-line {
+  width: 100%;
+  border-top: solid 2px hsl(236, 13%, 42%);
+  margin: 30px 0;
+}
+body section {
+  width: 80%;
+  display: flex;
+  margin: 100px auto 50px;
+}
+body section .card {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+body section .card .card-all {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body section .card .card-all .card-left {
+  display: flex;
+  width: 30%;
+}
+body section .card .card-all .card-left img {
+  width: 100%;
+}
+body section .card .card-all .card-right {
+  width: 60%;
+}
+body section .card .card-all .card-right h1 {
+  font-size: 40px;
+  color: hsl(233, 8%, 79%);
+}
+body section .card .card-all .card-right h2 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+body section .card .card-all .card-right p {
+  font-size: 18px;
+  color: hsl(236, 13%, 42%);
+}/*# sourceMappingURL=style.css.map */

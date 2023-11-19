@@ -1,0 +1,98 @@
+@media screen and (max-width: 376px) {
+  body header {
+    width: 100%;
+  }
+  body header nav {
+    padding: 0 5%;
+  }
+  body header nav .simple-ul {
+    display: none;
+  }
+  body header nav .gamburger-menu {
+    display: flex;
+  }
+  body header .header-bottom {
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+  }
+  body header .header-bottom .content {
+    width: 100%;
+    margin: 30px 0;
+  }
+  body header .header-bottom .content .img-content .img-desktop {
+    display: none;
+  }
+  body header .header-bottom .content .img-content .img-mobile {
+    display: flex;
+  }
+  body header .header-bottom .content .imgs-bottom {
+    width: 100%;
+    flex-direction: column;
+  }
+  body header .header-bottom .content .imgs-bottom .imgs-bottom-left {
+    width: 90%;
+  }
+  body header .header-bottom .content .imgs-bottom .imgs-bottom-left h1 {
+    font-size: 2.5rem;
+    line-height: 40px;
+    font-weight: 900;
+    font-family: Inter;
+  }
+  body header .header-bottom .content .imgs-bottom .imgs-bottom-right {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0;
+  }
+  body header .header-bottom .content .imgs-bottom .imgs-bottom-right p {
+    font-size: 1.1rem;
+  }
+  body header .header-bottom .header-right {
+    width: 100%;
+  }
+  body header .header-bottom .header-right .header-right-text-all {
+    padding: 30px 10px;
+  }
+  body header .header-bottom .header-right .header-right-text-all h1 {
+    font-size: 2.5rem;
+  }
+  body header .header-bottom .header-right .header-right-text-all h2 {
+    font-size: 1.3rem;
+  }
+  body header .header-bottom .header-right .header-right-text-all p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  body section {
+    width: 90%;
+  }
+  body section .card {
+    flex-direction: column;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body section .card .card-all {
+    width: 100%;
+    margin: 15px 0;
+  }
+  body section .card .card-all .card-left {
+    width: 30%;
+    align-items: center;
+  }
+  body section .card .card-all .card-left img {
+    width: 100%;
+  }
+  body section .card .card-all .card-right {
+    width: 58%;
+  }
+  body section .card .card-all .card-right h1 {
+    font-size: 2.2rem;
+  }
+  body section .card .card-all .card-right h2 {
+    font-size: 1.2rem;
+  }
+  body section .card .card-all .card-right p {
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=responsive.css.map */
